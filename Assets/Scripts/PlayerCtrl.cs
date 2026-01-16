@@ -83,8 +83,6 @@ public class PlayerCtrl : MonoBehaviour
         _flameMaxScale = boosterFlame.transform.localScale;
     }
 
-    // ========================= PLAYER MOVEMENT =========================
-
     private void HandlePlayerMovement()
     {
         if (IsThrustPressed())
@@ -149,8 +147,6 @@ public class PlayerCtrl : MonoBehaviour
         boosterFlame.SetActive(false);
     }
 
-    // ========================= SCORE =========================
-
     // Cập nhật điểm theo thời gian sống
     private void UpdateScore()
     {
@@ -159,9 +155,7 @@ public class PlayerCtrl : MonoBehaviour
         _scoreText.text = "Score: " + _score;
     }
 
-    // ========================= COLLISION / GAME OVER =========================
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D()
     {
         StopGame();
         UpdateHighScore();
