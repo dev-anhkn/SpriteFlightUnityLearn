@@ -20,7 +20,7 @@ public class Obstacle : MonoBehaviour
         ApplyRandomSize();
         ApplyRandomSpeedAndForce();
         ApplyRandomTorque();
-    }
+    }   
 
     private void ApplyRandomSize()
     {
