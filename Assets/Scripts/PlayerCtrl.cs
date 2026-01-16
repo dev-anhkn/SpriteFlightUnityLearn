@@ -1,3 +1,5 @@
+using System;
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -37,6 +39,21 @@ public class PlayerCtrl : MonoBehaviour
 
     private const string HighScoreKey = "HIGH_SCORE";
 
+    public InputAction moveForward;
+    public InputAction lookPosition;
+
+    void OnEnable()
+    {
+        moveForward.Enable();
+        lookPosition.Enable();
+    }
+
+    void OnDisable()
+    {
+        moveForward.Disable();
+        lookPosition.Disable();
+    }
+
     // ========================= START =========================
     private void Start()
     {
@@ -49,6 +66,10 @@ public class PlayerCtrl : MonoBehaviour
     private void Update()
     {
         UpdateScore();
+    }
+
+    private void FixedUpdate()
+    {
         HandlePlayerMovement();
     }
 
@@ -85,9 +106,9 @@ public class PlayerCtrl : MonoBehaviour
 
     private void HandlePlayerMovement()
     {
-        if (IsThrustPressed())
+        if (IsThrustHeld())
         {
-            RotateTowardMouse();
+            RotateTowardPointer();
             ApplyThrustForce();
             LimitMaxSpeed();
             UpdateBoosterFlame();
@@ -99,15 +120,15 @@ public class PlayerCtrl : MonoBehaviour
     }
 
     // Kiểm tra có đang giữ chuột trái không
-    private static bool IsThrustPressed()
+    private bool IsThrustHeld()
     {
-        return Mouse.current.leftButton.isPressed;
+        return moveForward.IsPressed();
     }
 
     // Xoay tàu về hướng chuột
-    private void RotateTowardMouse()
+    private void RotateTowardPointer()
     {
-        var mousePos = _camera.ScreenToWorldPoint(Mouse.current.position.value);
+        var mousePos = _camera.ScreenToWorldPoint(lookPosition.ReadValue<Vector2>());
         Vector2 direction = (mousePos - transform.position).normalized;
         transform.up = direction;
     }

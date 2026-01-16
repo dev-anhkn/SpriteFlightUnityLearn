@@ -128,12 +128,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1456766839}
     m_Modifications:
     - target: {fileID: -658880375001666639, guid: 200c19f76912b43b5bbb9a781f3abaa3, type: 3}
+      propertyPath: minSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -658880375001666639, guid: 200c19f76912b43b5bbb9a781f3abaa3, type: 3}
       propertyPath: maxSpeed
-      value: 150
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: -658880375001666639, guid: 200c19f76912b43b5bbb9a781f3abaa3, type: 3}
       propertyPath: minSpeed
-      value: 50
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: -658880375001666639, guid: 200c19f76912b43b5bbb9a781f3abaa3, type: 3}
       propertyPath: maxVelocity
@@ -210,12 +214,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1456766839}
     m_Modifications:
     - target: {fileID: -658880375001666639, guid: 200c19f76912b43b5bbb9a781f3abaa3, type: 3}
+      propertyPath: minSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -658880375001666639, guid: 200c19f76912b43b5bbb9a781f3abaa3, type: 3}
       propertyPath: maxSpeed
-      value: 150
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: -658880375001666639, guid: 200c19f76912b43b5bbb9a781f3abaa3, type: 3}
       propertyPath: minSpeed
-      value: 50
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: -658880375001666639, guid: 200c19f76912b43b5bbb9a781f3abaa3, type: 3}
       propertyPath: maxVelocity
@@ -739,6 +747,40 @@ MonoBehaviour:
   pulseSpeed: 50
   explosionEffect: {fileID: 6593412080151808799, guid: 8c22451a37977450793d16a358b3e31c, type: 3}
   borderParent: {fileID: 1653335595}
+  moveForward:
+    m_Name: Move Forward
+    m_Type: 1
+    m_ExpectedControlType: Button
+    m_Id: 248b440e-e227-4485-8501-072364c69962
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 90d02e9c-1c0d-4fb0-8bb7-2ff4048e6f05
+      m_Path: <Pointer>/press
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move Forward
+      m_Flags: 0
+    m_Flags: 0
+  lookPosition:
+    m_Name: Look Position
+    m_Type: 0
+    m_ExpectedControlType: Vector2
+    m_Id: 8a56a870-e5a2-4045-874b-681c64c2f779
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 263a40c8-d79e-43a7-a43c-0549dc2310de
+      m_Path: <Pointer>/position
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Look Position
+      m_Flags: 0
+    m_Flags: 0
 --- !u!1 &355372793
 GameObject:
   m_ObjectHideFlags: 0
@@ -1025,12 +1067,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1456766839}
     m_Modifications:
     - target: {fileID: -658880375001666639, guid: 200c19f76912b43b5bbb9a781f3abaa3, type: 3}
+      propertyPath: minSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -658880375001666639, guid: 200c19f76912b43b5bbb9a781f3abaa3, type: 3}
       propertyPath: maxSpeed
-      value: 150
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: -658880375001666639, guid: 200c19f76912b43b5bbb9a781f3abaa3, type: 3}
       propertyPath: minSpeed
-      value: 50
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: -658880375001666639, guid: 200c19f76912b43b5bbb9a781f3abaa3, type: 3}
       propertyPath: maxVelocity
@@ -1245,12 +1291,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1456766839}
     m_Modifications:
     - target: {fileID: -658880375001666639, guid: 200c19f76912b43b5bbb9a781f3abaa3, type: 3}
+      propertyPath: minSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -658880375001666639, guid: 200c19f76912b43b5bbb9a781f3abaa3, type: 3}
       propertyPath: maxSpeed
-      value: 150
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: -658880375001666639, guid: 200c19f76912b43b5bbb9a781f3abaa3, type: 3}
       propertyPath: minSpeed
-      value: 50
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: -658880375001666639, guid: 200c19f76912b43b5bbb9a781f3abaa3, type: 3}
       propertyPath: maxVelocity
@@ -6562,12 +6612,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1456766839}
     m_Modifications:
     - target: {fileID: -658880375001666639, guid: 200c19f76912b43b5bbb9a781f3abaa3, type: 3}
+      propertyPath: minSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -658880375001666639, guid: 200c19f76912b43b5bbb9a781f3abaa3, type: 3}
       propertyPath: maxSpeed
-      value: 150
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: -658880375001666639, guid: 200c19f76912b43b5bbb9a781f3abaa3, type: 3}
       propertyPath: minSpeed
-      value: 50
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: -658880375001666639, guid: 200c19f76912b43b5bbb9a781f3abaa3, type: 3}
       propertyPath: maxVelocity
@@ -6983,12 +7037,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1456766839}
     m_Modifications:
     - target: {fileID: -658880375001666639, guid: 200c19f76912b43b5bbb9a781f3abaa3, type: 3}
+      propertyPath: minSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -658880375001666639, guid: 200c19f76912b43b5bbb9a781f3abaa3, type: 3}
       propertyPath: maxSpeed
-      value: 150
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: -658880375001666639, guid: 200c19f76912b43b5bbb9a781f3abaa3, type: 3}
       propertyPath: minSpeed
-      value: 50
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: -658880375001666639, guid: 200c19f76912b43b5bbb9a781f3abaa3, type: 3}
       propertyPath: maxVelocity
@@ -7121,12 +7179,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1456766839}
     m_Modifications:
     - target: {fileID: -658880375001666639, guid: 200c19f76912b43b5bbb9a781f3abaa3, type: 3}
+      propertyPath: minSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -658880375001666639, guid: 200c19f76912b43b5bbb9a781f3abaa3, type: 3}
       propertyPath: maxSpeed
-      value: 150
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: -658880375001666639, guid: 200c19f76912b43b5bbb9a781f3abaa3, type: 3}
       propertyPath: minSpeed
-      value: 50
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: -658880375001666639, guid: 200c19f76912b43b5bbb9a781f3abaa3, type: 3}
       propertyPath: maxVelocity
